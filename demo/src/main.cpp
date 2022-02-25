@@ -10,9 +10,11 @@
 //   the backend itself (imgui_impl_vulkan.cpp), but should PROBABLY NOT be used by your own engine/app code.
 // Read comments in imgui_impl_vulkan.h.
 
+#pragma warning(disable: 4005)
 #include "imgui.h"
 #include "imgui_impl_sdl.h"
 #include "imgui_impl_vulkan.h"
+#pragma warning(default: 4005)
 #include <stdio.h>          // printf, fprintf
 #include <stdlib.h>         // abort
 #include <SDL.h>
@@ -443,7 +445,7 @@ int main(int, char**)
     //IM_ASSERT(font != NULL);
 
     // Note: Adjust font size as appropriate!
-	auto fontPath = fs::path(APP_ROOT) / "run_tree" / "fonts" / "Roboto-Regular.ttf";
+	auto fontPath = fs::path(APP_ROOT) / "run_tree" / "fonts" / "Cousine-Regular.ttf";
     io.Fonts->AddFontFromFileTTF(fontPath.string().c_str(), 26);
 
     // Upload Fonts
