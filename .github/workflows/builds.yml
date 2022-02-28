@@ -3,9 +3,9 @@ name: Builds
 on:
   # Do it on every push or PR on these branches
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   # Do build on demand
   workflow_dispatch:
 
