@@ -31,12 +31,18 @@ jobs:
         version: 1.3.204.0
         cache: true
 
-    - name: Build Windows
+    - name: Prebuild
       working-directory: ${{github.workspace}}
       shell: cmd
       run: |
         cd demo
         prebuild.bat
+
+    - name: Build Windows
+      working-directory: ${{github.workspace}}
+      shell: cmd
+      run: |
+        cd demo
         config.bat
         cd build
         cmake .. -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
