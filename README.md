@@ -1,4 +1,8 @@
 # vulkan_imgui_vcpkg_starter
+
+![Builds](https://github.com/vulkan_imgui_vcpkg_starter/workflows/Builds/badge.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vulkan_imgui_vcpkg_starter/blob/master/LICENSE)
+
 Minimal example of using vcpkg to bootstrap a vulkan/imgui.  Also sets up the high DPI manifest file for Windows.
 A font is loaded, which may be too big for low DPI screens; adjust as appropriate until the code reads the DPI and scales correctly
 
