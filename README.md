@@ -1,6 +1,6 @@
 # vulkan_imgui_vcpkg_starter
 
-![Builds](https://github.com/vulkan_imgui_vcpkg_starter/workflows/Builds/badge.svg)
+[![Builds](https://github.com/cmaughan/vulkan_imgui_vcpkg_starter/actions/workflows/builds.yml/badge.svg)](https://github.com/cmaughan/vulkan_imgui_vcpkg_starter/actions/workflows/builds.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vulkan_imgui_vcpkg_starter/blob/master/LICENSE)
 
 Minimal example of using vcpkg to bootstrap a vulkan/imgui.  Also sets up the high DPI manifest file for Windows.
